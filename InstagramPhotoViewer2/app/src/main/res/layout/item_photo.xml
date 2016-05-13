@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivProfileUser"
+                android:maxWidth="10dp"
+                android:maxHeight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:id="@+id/tvUsername"
+                android:textColor="#1692ce"
+                android:textColorLink="#58cfe9"
+                android:textSize="12sp"
+                android:linksClickable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ivProfileUser"
+                android:layout_toEndOf="@+id/ivProfileUser"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:id="@+id/tvDateCreation"
+                android:textColor="#1692ce"
+                android:textColorLink="#58cfe9"
+                android:linksClickable="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout2"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ivPhoto"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:minHeight="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvCaption"
+                android:layout_below="@+id/ivPhoto"
+                android:maxHeight="100dp"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:maxLines="3" />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout3"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ivlike"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:maxHeight="20dp"
+                android:maxWidth="20dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/profile_like" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvLikes"
+                android:maxHeight="100dp"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:layout_toRightOf="@+id/ivlike"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
